@@ -39,7 +39,7 @@ describe("Тестування роботи, підключення в body", ()
             </ul>
         `;
 
-    await runScript();
+    runScript();
     expect(logSpy).toHaveBeenNthCalledWith(1, "1");
     expect(logSpy).toHaveBeenNthCalledWith(2, "5");
     expect(logSpy).toHaveBeenNthCalledWith(3, "2");
@@ -62,7 +62,7 @@ describe("Тестування роботи, підключення в body", ()
             </ul>
         `;
 
-    await runScript();
+    runScript();
     expect(logSpy).toHaveBeenNthCalledWith(1, "1");
     expect(logSpy).toHaveBeenNthCalledWith(2, "50");
     expect(logSpy).toHaveBeenNthCalledWith(3, "2");
@@ -78,7 +78,7 @@ describe("Тестування роботи, підключення в body", ()
             </ul>
         `;
 
-    await runScript();
+    runScript();
     expect(logSpy).toHaveBeenNthCalledWith(1, "A");
     expect(logSpy).toHaveBeenNthCalledWith(2, "B");
     expect(logSpy).toHaveBeenNthCalledWith(3, "B");
@@ -97,7 +97,7 @@ describe("Тестування роботи, підключення в body", ()
             </ul>
         `;
 
-    await runScript();
+    runScript();
     expect(logSpy).toHaveBeenNthCalledWith(1, "A1");
     expect(logSpy).toHaveBeenNthCalledWith(2, "C2");
     expect(logSpy).toHaveBeenNthCalledWith(3, "B1");
@@ -121,7 +121,7 @@ describe("Тестування роботи, підключення в body", ()
             </ul>
         `;
 
-    await runScript();
+    runScript();
     expect(logSpy).toHaveBeenNthCalledWith(1, "item-01");
     expect(logSpy).toHaveBeenNthCalledWith(2, "item-06");
     expect(logSpy).toHaveBeenNthCalledWith(3, "item-02");
